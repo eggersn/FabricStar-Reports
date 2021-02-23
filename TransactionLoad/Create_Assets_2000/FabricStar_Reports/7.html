@@ -128,14 +128,16 @@
                 <li>DLT: &nbsp<span style="font-weight: 500;">fabric</span></li>
                 <li>Name: &nbsp<span style="font-weight: 500;">create-asset</span></li>
                 <li>Description: &nbsp<span style="font-weight: 500;">This is a duration based benchmark targeting a Hyperledger Fabric network using the &#x60;fixed-asset&#x60; NodeJS chaincode contract that is interacted with via a Fabric-SDK-Node Gateway. Each test round invokes the &#x60;createAsset&#x60; method, with successive rounds increasing the byteSize of the asset added into the world state database.</span></li>
-                <li>Benchmark Rounds: &nbsp<span style="font-weight: 500;">9</span></li>
+                <li>Benchmark Rounds: &nbsp<span style="font-weight: 500;">11</span></li>
                 <li><a href="#benchmarkInfo">Details</a></li>
             </ul>
             <ul>
                 <h3>&nbspBenchmark results</h3>
                 <li><a href="#benchmarksummary">Summary</a></li>
                     <li><a href="#create-asset-load-300">create-asset-load-300</a></li>
+                    <li><a href="#create-asset-load-450">create-asset-load-450</a></li>
                     <li><a href="#create-asset-load-600">create-asset-load-600</a></li>
+                    <li><a href="#create-asset-load-750">create-asset-load-750</a></li>
                     <li><a href="#create-asset-load-900">create-asset-load-900</a></li>
                     <li><a href="#create-asset-load-1050">create-asset-load-1050</a></li>
                     <li><a href="#create-asset-load-1200">create-asset-load-1200</a></li>
@@ -165,31 +167,37 @@
                     </tr>
 
                     <tr>
-                         <td>create-asset-load-300</td> <td>67689</td> <td>0</td> <td>227.5</td> <td>2.27</td> <td>0.18</td> <td>0.82</td> <td>227.3</td>
+                         <td>create-asset-load-300</td> <td>57095</td> <td>0</td> <td>192.4</td> <td>2.63</td> <td>0.14</td> <td>0.94</td> <td>192.1</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-600</td> <td>104837</td> <td>0</td> <td>353.0</td> <td>2.59</td> <td>0.20</td> <td>1.08</td> <td>352.5</td>
+                         <td>create-asset-load-450</td> <td>65090</td> <td>0</td> <td>218.8</td> <td>2.68</td> <td>0.14</td> <td>1.07</td> <td>218.4</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-900</td> <td>127473</td> <td>0</td> <td>426.8</td> <td>3.59</td> <td>0.27</td> <td>1.36</td> <td>426.1</td>
+                         <td>create-asset-load-600</td> <td>86143</td> <td>0</td> <td>288.5</td> <td>3.08</td> <td>0.16</td> <td>1.26</td> <td>288.1</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-1050</td> <td>131940</td> <td>0</td> <td>444.6</td> <td>4.41</td> <td>0.17</td> <td>1.46</td> <td>443.8</td>
+                         <td>create-asset-load-750</td> <td>90499</td> <td>0</td> <td>304.4</td> <td>3.44</td> <td>0.19</td> <td>1.39</td> <td>303.7</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-1200</td> <td>137996</td> <td>0</td> <td>462.0</td> <td>4.18</td> <td>0.29</td> <td>1.68</td> <td>461.0</td>
+                         <td>create-asset-load-900</td> <td>98086</td> <td>0</td> <td>329.7</td> <td>4.23</td> <td>0.16</td> <td>1.65</td> <td>329.0</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-1350</td> <td>142640</td> <td>0</td> <td>478.8</td> <td>4.89</td> <td>0.16</td> <td>1.77</td> <td>477.8</td>
+                         <td>create-asset-load-1050</td> <td>104827</td> <td>0</td> <td>351.5</td> <td>4.55</td> <td>0.14</td> <td>1.76</td> <td>350.7</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-1500</td> <td>141601</td> <td>0</td> <td>475.2</td> <td>5.90</td> <td>0.13</td> <td>2.05</td> <td>475.0</td>
+                         <td>create-asset-load-1200</td> <td>113921</td> <td>0</td> <td>382.8</td> <td>5.90</td> <td>0.26</td> <td>1.93</td> <td>382.1</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-1650</td> <td>139605</td> <td>0</td> <td>466.9</td> <td>6.16</td> <td>0.25</td> <td>2.27</td> <td>465.9</td>
+                         <td>create-asset-load-1350</td> <td>116434</td> <td>0</td> <td>391.3</td> <td>5.80</td> <td>0.14</td> <td>2.08</td> <td>391.2</td>
                     </tr>
                     <tr>
-                         <td>create-asset-load-1800</td> <td>139176</td> <td>0</td> <td>466.5</td> <td>7.12</td> <td>0.42</td> <td>2.43</td> <td>465.0</td>
+                         <td>create-asset-load-1500</td> <td>121678</td> <td>0</td> <td>408.0</td> <td>6.48</td> <td>0.14</td> <td>2.22</td> <td>407.3</td>
+                    </tr>
+                    <tr>
+                         <td>create-asset-load-1650</td> <td>126830</td> <td>0</td> <td>423.9</td> <td>6.29</td> <td>0.22</td> <td>2.44</td> <td>423.0</td>
+                    </tr>
+                    <tr>
+                         <td>create-asset-load-1800</td> <td>137833</td> <td>0</td> <td>462.0</td> <td>7.58</td> <td>0.29</td> <td>2.51</td> <td>461.3</td>
                     </tr>
                 </table>
             </div>
@@ -208,10 +216,31 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-300</td> <td>67689</td> <td>0</td> <td>227.5</td> <td>2.27</td> <td>0.18</td> <td>0.82</td> <td>227.3</td>
+                                     <td>create-asset-load-300</td> <td>57095</td> <td>0</td> <td>192.4</td> <td>2.63</td> <td>0.14</td> <td>0.94</td> <td>192.1</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-300</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="create-asset-load-450">
+                <h2>Benchmark round: create-asset-load-450</h2>
+                <p>Test a submitTransaction() Gateway method against the NodeJS &#x60;fixed-asset&#x60; Smart Contract method named &#x60;createAsset&#x60;, which inserts an asset of size 100 bytes into the World State database.</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">txDuration: 300
+rateControl:
+  type: fixed-load
+  opts:
+    transactionLoad: 450
+</pre>
+                        <h3>Performance metrics for create-asset-load-450</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>create-asset-load-450</td> <td>65090</td> <td>0</td> <td>218.8</td> <td>2.68</td> <td>0.14</td> <td>1.07</td> <td>218.4</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for create-asset-load-450</h3>
             </div>
 
             <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="create-asset-load-600">
@@ -229,10 +258,31 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-600</td> <td>104837</td> <td>0</td> <td>353.0</td> <td>2.59</td> <td>0.20</td> <td>1.08</td> <td>352.5</td>
+                                     <td>create-asset-load-600</td> <td>86143</td> <td>0</td> <td>288.5</td> <td>3.08</td> <td>0.16</td> <td>1.26</td> <td>288.1</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-600</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="create-asset-load-750">
+                <h2>Benchmark round: create-asset-load-750</h2>
+                <p>Test a submitTransaction() Gateway method against the NodeJS &#x60;fixed-asset&#x60; Smart Contract method named &#x60;createAsset&#x60;, which inserts an asset of size 100 bytes into the World State database.</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">txDuration: 300
+rateControl:
+  type: fixed-load
+  opts:
+    transactionLoad: 750
+</pre>
+                        <h3>Performance metrics for create-asset-load-750</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>create-asset-load-750</td> <td>90499</td> <td>0</td> <td>304.4</td> <td>3.44</td> <td>0.19</td> <td>1.39</td> <td>303.7</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for create-asset-load-750</h3>
             </div>
 
             <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="create-asset-load-900">
@@ -250,7 +300,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-900</td> <td>127473</td> <td>0</td> <td>426.8</td> <td>3.59</td> <td>0.27</td> <td>1.36</td> <td>426.1</td>
+                                     <td>create-asset-load-900</td> <td>98086</td> <td>0</td> <td>329.7</td> <td>4.23</td> <td>0.16</td> <td>1.65</td> <td>329.0</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-900</h3>
@@ -271,7 +321,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-1050</td> <td>131940</td> <td>0</td> <td>444.6</td> <td>4.41</td> <td>0.17</td> <td>1.46</td> <td>443.8</td>
+                                     <td>create-asset-load-1050</td> <td>104827</td> <td>0</td> <td>351.5</td> <td>4.55</td> <td>0.14</td> <td>1.76</td> <td>350.7</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-1050</h3>
@@ -292,7 +342,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-1200</td> <td>137996</td> <td>0</td> <td>462.0</td> <td>4.18</td> <td>0.29</td> <td>1.68</td> <td>461.0</td>
+                                     <td>create-asset-load-1200</td> <td>113921</td> <td>0</td> <td>382.8</td> <td>5.90</td> <td>0.26</td> <td>1.93</td> <td>382.1</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-1200</h3>
@@ -313,7 +363,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-1350</td> <td>142640</td> <td>0</td> <td>478.8</td> <td>4.89</td> <td>0.16</td> <td>1.77</td> <td>477.8</td>
+                                     <td>create-asset-load-1350</td> <td>116434</td> <td>0</td> <td>391.3</td> <td>5.80</td> <td>0.14</td> <td>2.08</td> <td>391.2</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-1350</h3>
@@ -334,7 +384,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-1500</td> <td>141601</td> <td>0</td> <td>475.2</td> <td>5.90</td> <td>0.13</td> <td>2.05</td> <td>475.0</td>
+                                     <td>create-asset-load-1500</td> <td>121678</td> <td>0</td> <td>408.0</td> <td>6.48</td> <td>0.14</td> <td>2.22</td> <td>407.3</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-1500</h3>
@@ -355,7 +405,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-1650</td> <td>139605</td> <td>0</td> <td>466.9</td> <td>6.16</td> <td>0.25</td> <td>2.27</td> <td>465.9</td>
+                                     <td>create-asset-load-1650</td> <td>126830</td> <td>0</td> <td>423.9</td> <td>6.29</td> <td>0.22</td> <td>2.44</td> <td>423.0</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-1650</h3>
@@ -376,7 +426,7 @@ rateControl:
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>create-asset-load-1800</td> <td>139176</td> <td>0</td> <td>466.5</td> <td>7.12</td> <td>0.42</td> <td>2.43</td> <td>465.0</td>
+                                     <td>create-asset-load-1800</td> <td>137833</td> <td>0</td> <td>462.0</td> <td>7.58</td> <td>0.29</td> <td>2.51</td> <td>461.3</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for create-asset-load-1800</h3>
@@ -412,6 +462,22 @@ rounds:
       arguments:
         chaincodeID: fixed-asset
         byteSize: 2000
+  - label: create-asset-load-450
+    description: &gt;-
+      Test a submitTransaction() Gateway method against the NodeJS &#x60;fixed-asset&#x60;
+      Smart Contract method named &#x60;createAsset&#x60;, which inserts an asset of size
+      100 bytes into the World State database.
+    chaincodeID: fixed-asset
+    txDuration: 300
+    rateControl:
+      type: fixed-load
+      opts:
+        transactionLoad: 450
+    workload:
+      module: benchmarks&#x2F;lib&#x2F;create-asset.js
+      arguments:
+        chaincodeID: fixed-asset
+        byteSize: 2000
   - label: create-asset-load-600
     description: &gt;-
       Test a submitTransaction() Gateway method against the NodeJS &#x60;fixed-asset&#x60;
@@ -423,6 +489,22 @@ rounds:
       type: fixed-load
       opts:
         transactionLoad: 600
+    workload:
+      module: benchmarks&#x2F;lib&#x2F;create-asset.js
+      arguments:
+        chaincodeID: fixed-asset
+        byteSize: 2000
+  - label: create-asset-load-750
+    description: &gt;-
+      Test a submitTransaction() Gateway method against the NodeJS &#x60;fixed-asset&#x60;
+      Smart Contract method named &#x60;createAsset&#x60;, which inserts an asset of size
+      100 bytes into the World State database.
+    chaincodeID: fixed-asset
+    txDuration: 300
+    rateControl:
+      type: fixed-load
+      opts:
+        transactionLoad: 750
     workload:
       module: benchmarks&#x2F;lib&#x2F;create-asset.js
       arguments:
