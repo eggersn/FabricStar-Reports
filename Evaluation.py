@@ -5,8 +5,8 @@ from matplotlib import pyplot as plt
 
 
 # Read csv
-hyperledger_path = "TransactionLoad/Create_Assets_2000/Hyperledger_Evaluation.csv"
-fabricstar_path = "TransactionLoad/Create_Assets_2000/FabricStar_Evaluation.csv"
+hyperledger_path = "TransactionLoad/Large_Network/Create_Assets_100/Hyperledger_Evaluation.csv"
+fabricstar_path = "TransactionLoad/Large_Network/Create_Assets_100/FabricStar_Evaluation.csv"
 
 def getData(path):
     df = pd.read_csv(path, sep=", ")
@@ -47,8 +47,9 @@ benchmark_names, hyperledger_values, hyperledger_avg, hyperledger_sd = getData(h
 _, fabricstar_values, fabricstar_avg, fabricstar_sd = getData(fabricstar_path)
 
 # Input
-x_values = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500, 1650, 1800]
-bar_width = 50
+# x_values = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500, 1650, 1800]
+x_values = [300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000]
+bar_width = 84
 
 # Plot Settings
 fig, ax1 = plt.subplots()
@@ -60,8 +61,8 @@ ax1.set_xlabel("Transaction Load")
 ax1.set_ylabel("Throughput [TPS]")
 
 ax2.set_ylabel("Latency (Min/Avg/Max) [sec]")
-plt.title("Create-Asset-2000")
-ax2.set_ylim([0, 15])
+plt.title("Create-Asset-100")
+ax2.set_ylim([0, 10])
 
 # hyperledger value plots
 # Throughput
