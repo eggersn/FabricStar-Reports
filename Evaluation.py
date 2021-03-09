@@ -5,8 +5,8 @@ from matplotlib import pyplot as plt
 
 
 # Read csv
-hyperledger_path = "TransactionLoad/Small_Network/Create_Assets_16000/Hyperledger_Evaluation.csv"
-fabricstar_path = "TransactionLoad/Small_Network/Create_Assets_16000/FabricStar_Evaluation.csv"
+hyperledger_path = "TransactionLoad/Small_Network/Create_Assets_2000/Hyperledger_Evaluation.csv"
+fabricstar_path = "TransactionLoad/Small_Network/Create_Assets_2000/FabricStar_Evaluation.csv"
 
 def getData(path):
     df = pd.read_csv(path, sep=", ")
@@ -47,10 +47,10 @@ benchmark_names, hyperledger_values, hyperledger_avg, hyperledger_sd = getData(h
 _, fabricstar_values, fabricstar_avg, fabricstar_sd = getData(fabricstar_path)
 
 # Input
-#x_values = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500, 1650, 1800]
-x_values = [75, 150, 225, 300, 375, 450, 525, 600, 675, 750, 825, 900]
+x_values = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500, 1650, 1800]
+#x_values = [75, 150, 225, 300, 375, 450, 525, 600, 675, 750, 825, 900]
 # x_values = [300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000]
-bar_width = 20
+bar_width = 50
 
 # Plot Settings
 fig, ax1 = plt.subplots()
@@ -62,8 +62,8 @@ ax1.set_xlabel("Transaction Load")
 ax1.set_ylabel("Throughput [TPS]")
 
 ax2.set_ylabel("Latency (Min/Avg/Max) [sec]")
-plt.title("Create-Asset-16000")
-ax2.set_ylim([0, 18])
+plt.title("Create-Asset-2000")
+ax2.set_ylim([0, 15])
 
 # hyperledger value plots
 # Throughput
